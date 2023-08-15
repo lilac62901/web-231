@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+    Title: thompson-exercise2.html
+    Author: Lori Thompson
+    Date: 08/14/23
+    Description:  Web 231 - Enterprise JavaScript I Exercise 2
+-->
+<html lang="en">
+    <head>
+        <title>WEB 231 - Enterprise JavaScript I</title>
+        <link href="../site.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Exercise 2.2 - Hello JavaScript</h1>
+        <button type="button" onclick="myFunction()">What course am I taking?</button>
+        <script>function myFunction() {
+            alert("WEB 231 - Enterprise JavaScript I")
+        }
+        </script>
+        <p id="txtMyWorld"></p>
+            <script>
+                document.getElementById("txtMyWorld").innerHTML = "You are now in Thompson's world!";
+            </script>
+            <div class="return-home">
+                <a href="../index.html">Return</a>
+            </div>
+    </body>
+    </html>

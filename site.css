@@ -41,3 +41,6 @@ a:visited {
 .return-home:visited {
     color: #3c275a;
 }
+.lists {
+    border: 1px dotted red;
+}

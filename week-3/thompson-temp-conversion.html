@@ -13,10 +13,35 @@
     </head>
     <body>
         <div id="container">
-            <h1 class="app-header">Welcome to thr Temperature Conversion App</h1>
+            <h1 class="app-header">Welcome to the Temperature Conversion App</h1>
             <div id="card-example">
                 <div class="card">
                     <div class="card-title">Fahrenheit to Celsius Converter</div>
+                    <div class="form">
+                        <div class="form-field">
+                            <label for="txtFahrenheitValue">Fahrenheit value:</label>
+                            <input type="text" class="input" id="txtFahrenheitValue" name="txtFahrenheitValue"/>
+                        </div>
+                        <div class="form-field">
+                            <button class="btn btn-primary full-width" onclick="myFunction()">Convert Temperature</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div id="form-results-example">
+            <div class="card">
+                <div class="card-title">Conversion Results</div>
+                <p id="card-content">
+                </p>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("txtFahrenheitValue").value;
+              document.getElementById("card-content").innerHTML = (x - 32) * 5/9;
+              parseFloat(card-content).tofixed(2);
+            }
+            </script>
+    </body>
+</html>

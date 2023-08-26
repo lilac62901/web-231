@@ -8,31 +8,8 @@ body {
     margin: 0;
     font-family: 'Oswald', Veranda, Arial, sans-serif;
 }
-header {
-    background-color: #3c275a;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
 h1 {
     font-weight: 400;
-}
-#navbar {
-    overflow: hidden;
-    background-color: #4f3674;
-    border-bottom: solid 15px #d6a800;
-}
-#navbar a{
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-#navbar a:hover {
-    background-color: #d6a800;
-    color: #4f3674
 }
 #container {
     margin: 2% 5% 100px 5%;
@@ -54,28 +31,6 @@ h1 {
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-footer {
-    background-color: #4f3674;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-footer p {
-    text-decoration: none;
-    color: white;
-    float: right;
-    padding-right: 10px;
-    font-style: italic;
-    font-size: .75em;
-}
-footer a {
-    text-decoration: none;
-    color: white;
-}
-footer a:hover {
-    text-decoration: underline;
 }
 .form {
     display: inline-grid;
@@ -114,38 +69,6 @@ footer a:hover {
 .full-width {
     width: 100%;
 }
-#books {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 30px;
-}
-th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4f3674;
-    color: white;
-}
-td, th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-tr:hover {
-    background-color: #d6a800;
-    color: #4f3674;
-    cursor: pointer;
-}
-#container {
-    padding: 10px;
-}
-#form-example {
-    width: 600px;
-    margin: 3% auto 0;
-}
-#form-results-example {
-    width: 600px;
-    margin: 3% auto 0;
-}
 #card-content {
     text-align: center;
     font-size: 28px;
@@ -163,5 +86,5 @@ a:visited {
     color: #3c275a;
 }
 #form-results-example {
-    align-self: center;
+    margin: 2% 5% 100px 5%;
 }

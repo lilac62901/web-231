@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+    Title: thompson-numbers-game.html
+    Author: Lori Thompson and GeeksforGeeks.org. I used this tool for help with JavaScript.
+    Date: 08/22/23
+    Description: A number game site for Web 231 - Enterprise JavaScript I
+-->
+<html lang="en">
+    <head>
+        <title>WEB 231 - Enterprise JavaScript I</title>
+        <link href="thompson-number-game.css" type="text/css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <h1 class="app-header">Welcome to the numbers game!</h1>
+            <div id="card-example">
+                <div class="card">
+                    <div class="card-title">Pick a number between 1 and 10</div>
+                    <div class="form">
+                        <div class="form-field">
+                            <label for="txtMyNumber">Guess the number:</label>
+                            <input type="text" class="input" id="txtMyNumber" name="txtMyNumber"/>
+                        </div>
+                        <div class="form-field">
+                            <button class="btn btn-primary full-width" id="btnSubmit" onclick="myFunction()">submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="form-results-example">
+            <div class="card">
+                <div class="card-title">Results</div>
+                <p id="card-content">
+                </p>
+            </div>
+        </div>
+        <script>
+        // Generate a Random Number
+        let y = Math.floor(Math.random() * 10 + 1);
+ 
+        document.getElementById("btnSubmit").onclick = function() {
+ 
+            // Number guessed by user   
+            let x = document.getElementById("txtMyNumber").value;
+ 
+            if (x == y) {
+                document.getElementById("card-content").innerHTML = ("Congratulations! You picked the correct number");
+            }
+ 
+            // If guessed number is greater than actual number
+            else if (x > y) {
+                document.getElementById("card-content").innerHTML = ("The number is less than " + x);
+            }
+            // If guessed number is less than actual number
+            else if (x < y) {
+                document.getElementById("card-content").innerHTML = ("The number is greater than " + x)
+            }
+        }       
+        </script>
+            <div class="return-home">
+                <a href="../index.html">Return</a>
+            </div>
+    </body>
+</html>

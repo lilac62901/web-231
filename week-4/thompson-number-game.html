@@ -38,24 +38,24 @@
         </div>
         <script>
         // Generate a Random Number
-        let y = Math.floor(Math.random() * 10 + 1);
+        const rnd = Math.floor((Math.random() * 10) + 1);
  
         document.getElementById("btnSubmit").onclick = function() {
  
             // Number guessed by user   
-            let x = document.getElementById("txtMyNumber").value;
+            let myNumber = document.getElementById("txtMyNumber").value;
  
-            if (x == y) {
+            if (myNumber == rnd) {
                 document.getElementById("card-content").innerHTML = ("Congratulations! You picked the correct number");
             }
  
             // If guessed number is greater than actual number
-            else if (x > y) {
-                document.getElementById("card-content").innerHTML = ("The number is less than " + x);
+            else if (myNumber > rnd) {
+                document.getElementById("card-content").innerHTML = ("The number is less than " + myNumber);
             }
             // If guessed number is less than actual number
-            else if (x < y) {
-                document.getElementById("card-content").innerHTML = ("The number is greater than " + x)
+            else if (myNumber < rnd) {
+                document.getElementById("card-content").innerHTML = ("The number is greater than " + myNumber)
             }
         }       
         </script>
